@@ -12,13 +12,13 @@ public class ejercicio4 {
 		int cantPartidos = entrada.nextInt();
 		
 		
-		int sumaGoles = 10;
+		int sumaGoles = 0;
 	
-		for (int i = 0; i < cantPartidos; i+=1) {
+		for (int i = 0; i < cantPartidos; i++) {
 			
-			System.out.println("Ingrese la cantidad de goles" + (i+=1) + ":");
+			System.out.println("Ingrese la cantidad de goles" + (i+1) + ":");
 			
-			sumaGoles = entrada.nextInt();
+			sumaGoles += entrada.nextInt();
 						
 		}
 		
