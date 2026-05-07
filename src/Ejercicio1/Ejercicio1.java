@@ -8,16 +8,15 @@ public class Ejercicio1 {
 		
 		 Scanner entrada = new Scanner(System.in);
 	
-			System.out.println("Ingrese el nombre de usuario:");
+		System.out.println("Ingrese el nombre de usuario:");
+		String nombre = entrada.next();
 		
-		String nombreUsuario = entrada.next(); 
-		
-		System.out.println("Ingrese la cantidad de misiones:");
-		int cantidadMisiones = entrada.nextInt(0);
+	    System.out.println("Ingrese la cantidad de misiones:");
+		int cantidadMisiones = entrada.nextInt();
 		
 		String nivelGamer;
 		
-		if (cantidadMisiones >= 1 && cantidadMisiones <= 5) {
+		if (cantidadMisiones == 0)  {
 			//Novato
 			nivelGamer = "Novato";
 			
@@ -29,7 +28,7 @@ public class Ejercicio1 {
 			//Experimentado
 			nivelGamer = "Experimentado";
 		
-		}else if (cantidadMisiones >15) {
+		}else if (cantidadMisiones >= 16) {
 			//Veterano
 			nivelGamer = "Veterano";
 		
@@ -38,9 +37,9 @@ public class Ejercicio1 {
 			nivelGamer = "Valor incorrecto";
 		}
 			
-		System.out.println("nombreUsuario" + nombreUsuario);
-		System.out.println("cantidadMisiones" + cantidadMisiones);
-		System.out.println("nivelGamer" + nivelGamer);
+		System.out.println("nombreUsuario: " + nombre);
+		System.out.println("cantidadMisiones: " + cantidadMisiones);
+		System.out.println("nivelGamer: " + nivelGamer);
 		
 			
 		

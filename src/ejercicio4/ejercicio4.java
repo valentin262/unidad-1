@@ -11,9 +11,10 @@ public class ejercicio4 {
 		System.out.println("¿cuantos partidos jugo el jugador?");
 		int cantPartidos = entrada.nextInt();
 		
-		int sumaGoles = 0;
+		
+		int sumaGoles = 10;
 	
-		for (int i = 0; i < sumaGoles; i+=1) {
+		for (int i = 0; i < cantPartidos; i+=1) {
 			
 			System.out.println("Ingrese la cantidad de goles" + (i+=1) + ":");
 			
@@ -21,7 +22,10 @@ public class ejercicio4 {
 						
 		}
 		
+		
 		double prom = (double) sumaGoles / (double) cantPartidos; 
+		
+		System.out.println("el pomedio de goles fue: " + prom);
 		
 	}
 
